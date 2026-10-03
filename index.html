@@ -13,62 +13,163 @@
 <body>
 
     <!-- ヘッダー -->
+
     <header>
 
-        <h2>MY WEBSITE</h2>
+        <div class="logo">
+            <span>PRIVATE DETECTIVE</span>
+            <strong>坂山探偵事務所</strong>
+        </div>
 
         <nav>
             <a href="index.html">HOME</a>
             <a href="about.html">ABOUT</a>
-            <a href="works.html">WORKS</a>
+            <a href="works.html">CASE FILES</a>
+            <a href="contact.html">CONTACT</a>
         </nav>
 
     </header>
 
 
     <!-- メイン -->
+
     <main>
 
-        <!-- トップ -->
-        <section id="home">
+        <!-- ヒーロー -->
 
-            <h1>坂山探偵事務所</h1>
+        <section class="hero">
 
-            <p>坂山探偵事務所は<br>
-                あなたに寄り添い悩みを解決いたします
+            <div class="hero-content">
 
+                <p class="hero-subtitle">
+                    PRIVATE DETECTIVE OFFICE
+                </p>
 
-            </p>
+                <h1>
+                    真実を、<br>
+                    追い続ける。
+                </h1>
 
-            <button>詳しく見る</button>
+                <p class="hero-text">
+                    人には言えない悩みや、<br>
+                    解決できない疑問をお聞かせください。
+                </p>
+
+                <a href="about.html" class="main-button">
+                    INVESTIGATE
+                </a>
+
+            </div>
 
         </section>
 
 
-        <!-- プロフィール -->
-        <section id="about">
+        <!-- CASE FILES -->
 
-            <h2>ABOUT ME</h2>
-            <h3>坂山　愛弥</h3>
+        <section class="case-section">
 
-            <div class="profile">
+            <p class="section-label">
+                INVESTIGATION RECORDS
+            </p>
 
-                <img
-                    class="profile-image"
-                    src="images/profile.jpg"
-                    alt="プロフィール画像"
-                >
+            <h2>
+                CASE FILES
+            </h2>
 
-                <p>
-                    好きな食べ物：鯖の味噌煮<br>
-                    好きな飲み物：ジンジャーハイ<br>
-                    好きな配信者：キヨ<br>
-                    好きなアニメ：僕のヒーローアカデミア・無職転生<br>
-                    好きなカップ数については会った時に直接お尋ねください。
-                    
-                </p>
+            <p class="section-description">
+                これまでに扱った調査記録の一部をご紹介します。
+            </p>
+
+
+            <div class="case-container">
+
+
+                <!-- CASE 01 -->
+
+                <a href="works.html" class="case-card">
+
+                    <span class="case-number">
+                        CASE 001
+                    </span>
+
+                    <h3>
+                        消えた証拠
+                    </h3>
+
+                    <p>
+                        ある事件現場から忽然と姿を消した証拠品。
+                    </p>
+
+                    <span class="read-more">
+                        READ FILE →
+                    </span>
+
+                </a>
+
+
+                <!-- CASE 02 -->
+
+                <a href="works.html" class="case-card">
+
+                    <span class="case-number">
+                        CASE 002
+                    </span>
+
+                    <h3>
+                        失踪した人物
+                    </h3>
+
+                    <p>
+                        突然姿を消した人物の行方を追う。
+                    </p>
+
+                    <span class="read-more">
+                        READ FILE →
+                    </span>
+
+                </a>
+
+
+                <!-- CASE 03 -->
+
+                <a href="works.html" class="case-card">
+
+                    <span class="case-number">
+                        CASE 003
+                    </span>
+
+                    <h3>
+                        深夜の電話
+                    </h3>
+
+                    <p>
+                        毎晩同じ時刻にかかってくる謎の電話。
+                    </p>
+
+                    <span class="read-more">
+                        READ FILE →
+                    </span>
+
+                </a>
+
 
             </div>
+
+        </section>
+
+
+        <!-- MESSAGE -->
+
+        <section class="message">
+
+            <p>
+                EVERY CASE HAS A TRUTH.
+            </p>
+
+            <h2>
+                すべての事件には、<br>
+                真実がある。
+            </h2>
 
         </section>
 
@@ -76,9 +177,18 @@
 
 
     <!-- フッター -->
+
     <footer>
 
-        <p>© 2026 My Website</p>
+        <p>坂山探偵事務所</p>
+
+        <p>
+            PRIVATE & CONFIDENTIAL
+        </p>
+
+        <p>
+            © 2026 SAKAYAMA DETECTIVE OFFICE
+        </p>
 
     </footer>
 

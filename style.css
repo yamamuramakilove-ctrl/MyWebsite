@@ -1,17 +1,21 @@
-/* ページ全体 */
+/* =========================
+   全体
+========================= */
 
 body {
     margin: 0;
 
-    font-family: sans-serif;
+    font-family: "Hiragino Mincho ProN", "Yu Mincho", serif;
 
-    background-color: #f5f5f5;
+    background-color: #171717;
 
-    color: #333;
+    color: #e8e2d5;
 }
 
 
-/* ヘッダー */
+/* =========================
+   ヘッダー
+========================= */
 
 header {
     display: flex;
@@ -20,225 +24,1641 @@ header {
 
     align-items: center;
 
-    padding: 20px 50px;
+    padding: 25px 60px;
 
-    background-color: white;
+    background-color: #111;
+
+    border-bottom: 1px solid #4a463d;
 }
 
 
-header h2 {
-    margin: 0;
+/* ロゴ */
+
+.logo {
+    display: flex;
+
+    flex-direction: column;
 }
 
 
-/* メニュー */
+.logo span {
+    font-family: Georgia, serif;
+
+    font-size: 11px;
+
+    letter-spacing: 3px;
+
+    color: #999;
+}
+
+
+.logo strong {
+    margin-top: 4px;
+
+    font-size: 20px;
+
+    letter-spacing: 3px;
+}
+
+
+/* =========================
+   ナビゲーション
+========================= */
+
+nav {
+    display: flex;
+
+    gap: 35px;
+}
+
 
 nav a {
-    margin-left: 30px;
-
-    color: #333;
+    color: #d8d0c0;
 
     text-decoration: none;
+
+    font-family: Georgia, serif;
+
+    font-size: 13px;
+
+    letter-spacing: 2px;
+
+    transition: 0.3s;
 }
+
 
 nav a:hover {
-    opacity: 0.5;
+    color: #fff;
+
+    opacity: 0.6;
 }
 
 
-/* トップ */
+/* =========================
+   HERO
+========================= */
 
-#home {
-    text-align: center;
+.hero {
+    min-height: 650px;
 
-    padding: 150px 20px;
-}
+    display: flex;
 
+    align-items: center;
 
-#home h1 {
-    font-size: 50px;
-
-    margin-bottom: 20px;
-}
-
-
-#home p {
-    font-size: 20px;
-}
-
-
-/* ボタン */
-
-button {
-    margin-top: 20px;
-
-    padding: 12px 30px;
-
-    font-size: 18px;
-
-    border: none;
-
-    border-radius: 8px;
-
-    background-color: #333;
-
-    color: white;
-
-    cursor: pointer;
-}
-
-button:hover {
-    opacity: 0.7;
-}
-
-
-/* ABOUT */
-
-#about {
-    background-color: white;
+    justify-content: center;
 
     text-align: center;
 
-    padding: 100px 20px;
+    background:
+        linear-gradient(
+            rgba(10, 10, 10, 0.75),
+            rgba(10, 10, 10, 0.75)
+        );
+
+    border-bottom: 1px solid #4a463d;
 }
 
 
-#about h2 {
-    font-size: 35px;
+.hero-content {
+    max-width: 700px;
 
-    margin-bottom: 50px;
+    padding: 40px;
 }
 
 
-/* プロフィール */
+.hero-subtitle {
+    font-family: Georgia, serif;
 
-.profile {
-    max-width: 600px;
+    font-size: 13px;
 
-    margin: 0 auto;
+    letter-spacing: 5px;
+
+    color: #a89f8c;
+
+    margin-bottom: 30px;
 }
 
 
-.profile-image {
-    width: 150px;
-    height: 150px;
+.hero h1 {
+    font-size: 64px;
 
-    margin: 0 auto 30px;
+    font-weight: normal;
 
-    border-radius: 50%;
+    line-height: 1.5;
 
-    object-fit: cover;
+    margin: 0 0 30px;
 }
 
 
-.profile p {
-    font-size: 18px;
+.hero-text {
+    font-size: 16px;
 
     line-height: 2;
+
+    color: #bbb3a4;
+
+    margin-bottom: 40px;
 }
 
 
-/* フッター */
+/* =========================
+   ボタン
+========================= */
 
-footer {
+.main-button {
+    display: inline-block;
+
+    padding: 15px 45px;
+
+    border: 1px solid #a89f8c;
+
+    color: #e8e2d5;
+
+    text-decoration: none;
+
+    font-family: Georgia, serif;
+
+    font-size: 13px;
+
+    letter-spacing: 3px;
+
+    transition: 0.3s;
+}
+
+
+.main-button:hover {
+    background-color: #e8e2d5;
+
+    color: #171717;
+}
+
+
+/* =========================
+   CASE FILES
+========================= */
+
+.case-section {
+    padding: 120px 40px;
+
     text-align: center;
 
-    padding: 30px;
+    background-color: #e8e2d5;
 
-    background-color: #333;
-
-    color: white;
-}
-/* WORKS */
-
-#works {
-    text-align: center;
-
-    padding: 100px 20px;
-
-    background-color: #f5f5f5;
+    color: #222;
 }
 
 
-#works h1 {
-    font-size: 40px;
+.section-label {
+    font-family: Georgia, serif;
+
+    font-size: 11px;
+
+    letter-spacing: 4px;
+
+    color: #777;
 
     margin-bottom: 15px;
 }
 
 
-.works-description {
-    margin-bottom: 50px;
+.case-section h2 {
+    font-size: 42px;
+
+    font-weight: normal;
+
+    letter-spacing: 5px;
+
+    margin: 0 0 20px;
+}
+
+
+.section-description {
+    color: #666;
+
+    margin-bottom: 60px;
+}
+
+
+/* =========================
+   CASEカード
+========================= */
+
+.case-container {
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    gap: 25px;
+
+    justify-content: center;
+}
+
+
+.case-card {
+    flex: 1;
+
+    max-width: 330px;
+
+    padding: 35px;
+
+    box-sizing: border-box;
+
+    text-align: left;
+
+    text-decoration: none;
+
+    color: #222;
+
+    background-color: #f4f0e7;
+
+    border: 1px solid #c8c0b0;
+
+    transition: 0.3s;
+}
+
+
+.case-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+
+.case-number {
+    font-family: Georgia, serif;
+
+    font-size: 12px;
+
+    letter-spacing: 2px;
+
+    color: #777;
+}
+
+
+.case-card h3 {
+    font-size: 25px;
+
+    font-weight: normal;
+
+    margin: 30px 0 15px;
+}
+
+
+.case-card p {
+    font-size: 14px;
+
+    line-height: 1.8;
 
     color: #666;
 }
 
 
-/* 作品を並べる */
+.read-more {
+    display: block;
 
-.works-container {
+    margin-top: 30px;
+
+    font-family: Georgia, serif;
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+    color: #444;
+}
+
+
+/* =========================
+   MESSAGE
+========================= */
+
+.message {
+    padding: 150px 30px;
+
+    text-align: center;
+
+    background-color: #111;
+
+    border-top: 1px solid #4a463d;
+
+    border-bottom: 1px solid #4a463d;
+}
+
+
+.message p {
+    font-family: Georgia, serif;
+
+    font-size: 11px;
+
+    letter-spacing: 5px;
+
+    color: #8d877a;
+
+    margin-bottom: 30px;
+}
+
+
+.message h2 {
+    font-size: 38px;
+
+    font-weight: normal;
+
+    line-height: 1.8;
+
+    margin: 0;
+}
+
+
+/* =========================
+   フッター
+========================= */
+
+footer {
+    padding: 50px 20px;
+
+    text-align: center;
+
+    background-color: #111;
+
+    color: #777;
+}
+
+
+footer p {
+    margin: 10px;
+
+    font-size: 12px;
+
+    letter-spacing: 2px;
+}
+
+/* =========================
+   ABOUT
+========================= */
+
+
+/* ABOUTトップ */
+
+.about-hero {
+    padding: 120px 30px;
+
+    text-align: center;
+
+    background-color: #171717;
+
+    border-bottom: 1px solid #4a463d;
+}
+
+
+.about-hero h1 {
+    font-size: 50px;
+
+    font-weight: normal;
+
+    letter-spacing: 4px;
+
+    margin: 20px 0 30px;
+}
+
+
+.about-hero p:last-child {
+    color: #aaa;
+
+    line-height: 2;
+
+    font-size: 15px;
+}
+
+
+/* -------------------------
+   メッセージ
+------------------------- */
+
+.about-message {
+    padding: 120px 30px;
+
+    background-color: #e8e2d5;
+
+    color: #222;
+}
+
+
+.about-text {
+    max-width: 750px;
+
+    margin: 0 auto;
+}
+
+
+.about-label {
+    font-family: Georgia, serif;
+
+    font-size: 11px;
+
+    letter-spacing: 4px;
+
+    color: #777;
+}
+
+
+.about-text h2 {
+    font-size: 42px;
+
+    font-weight: normal;
+
+    line-height: 1.7;
+
+    margin: 30px 0 40px;
+}
+
+
+.about-text p:not(.about-label) {
+    font-size: 15px;
+
+    line-height: 2;
+
+    color: #555;
+
+    margin-bottom: 25px;
+}
+
+
+/* -------------------------
+   調査内容
+------------------------- */
+
+.services {
+    padding: 120px 30px;
+
+    text-align: center;
+
+    background-color: #171717;
+}
+
+
+.services h2 {
+    font-size: 40px;
+
+    font-weight: normal;
+
+    margin: 20px 0 60px;
+}
+
+
+.service-container {
+    max-width: 1000px;
+
+    margin: 0 auto;
+
     display: flex;
 
-    justify-content: center;
+    gap: 25px;
+}
 
-    gap: 30px;
 
+.service-card {
+    flex: 1;
+
+    padding: 40px 30px;
+
+    text-align: left;
+
+    border: 1px solid #4a463d;
+
+    background-color: #1d1d1d;
+}
+
+
+.service-card span {
+    font-family: Georgia, serif;
+
+    font-size: 12px;
+
+    letter-spacing: 2px;
+
+    color: #888;
+}
+
+
+.service-card h3 {
+    font-size: 24px;
+
+    font-weight: normal;
+
+    margin: 30px 0 15px;
+}
+
+
+.service-card p {
+    font-size: 14px;
+
+    line-height: 1.8;
+
+    color: #aaa;
+}
+
+
+/* -------------------------
+   事務所概要
+------------------------- */
+
+.office-info {
+    padding: 120px 30px;
+
+    background-color: #e8e2d5;
+
+    color: #222;
+
+    text-align: center;
+}
+
+
+.office-info h2 {
+    font-size: 40px;
+
+    font-weight: normal;
+
+    margin: 20px 0 60px;
+}
+
+
+.office-table {
+    max-width: 700px;
+
+    margin: 0 auto;
+
+    border-top: 1px solid #aaa;
+}
+
+
+.office-row {
+    display: flex;
+
+    justify-content: space-between;
+
+    padding: 22px 10px;
+
+    border-bottom: 1px solid #aaa;
+
+    text-align: left;
+}
+
+
+.office-row span {
+    color: #777;
+}
+
+
+.office-row strong {
+    font-weight: normal;
+}
+
+/* -------------------------
+   代表挨拶
+------------------------- */
+
+.about-message {
+    padding: 120px 30px;
+
+    background-color: #e8e2d5;
+
+    color: #222;
+}
+
+/* 挨拶本文 */
+
+.representative-description {
+    font-size: 15px;
+
+    line-height: 2;
+
+    color: #555;
+
+    margin: 0 0 20px;
+}
+.representative-container {
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 80px;
+}
+
+
+/* 人物写真 */
+
+.representative-photo {
+    flex-shrink: 0;
+
+    width: 280px;
+
+    height: 280px;
+
+    border-radius: 50%;
+
+    overflow: hidden;
+
+    border: 1px solid #aaa;
+}
+
+
+.representative-photo img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/* 代表挨拶 */
+
+.representative-text {
+    max-width: 560px;
+}
+
+
+.representative-name {
+    font-size: 48px;
+
+    margin: 0 0 25px;
+
+    letter-spacing: 3px;
+}
+
+
+.representative-position {
+    font-size: 20px;
+
+    color: #777;
+
+    margin: 0 0 25px;
+
+    
+}
+
+
+/* キャッチコピー */
+
+.representative-text h2 {
+    font-size: 42px;
+
+    font-weight: normal;
+
+    line-height: 1.7;
+
+    margin: 0 0 45px;
+}
+
+
+.representative-text .about-label {
+    font-family: Georgia, serif;
+
+    font-size: 13px;
+
+    letter-spacing: 5px;
+
+    color: #777;
+
+    margin: 0 0 45px;
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+
+/* CONTACTトップ */
+
+.contact-hero {
+    padding: 120px 30px;
+
+    text-align: center;
+
+    background-color: #171717;
+
+    border-bottom: 1px solid #4a463d;
+}
+
+
+.contact-hero h1 {
+    font-size: 50px;
+
+    font-weight: normal;
+
+    letter-spacing: 4px;
+
+    margin: 20px 0 30px;
+}
+
+
+.contact-hero p:last-child {
+    color: #aaa;
+
+    line-height: 2;
+
+    font-size: 15px;
+}
+
+
+
+/* -------------------------
+   調査依頼フォーム
+------------------------- */
+
+.contact-form-section {
+    padding: 120px 30px;
+
+    background-color: #e8e2d5;
+
+    color: #222;
+}
+
+
+.contact-form-container {
+    max-width: 750px;
+
+    margin: 0 auto;
+}
+
+
+.contact-form-container h2 {
+    font-size: 40px;
+
+    font-weight: normal;
+
+    margin: 20px 0 15px;
+}
+
+
+.contact-description {
+    color: #666;
+
+    font-size: 14px;
+
+    margin-bottom: 60px;
+}
+
+
+
+/* フォーム */
+
+.form-item {
+    margin-bottom: 35px;
+}
+
+
+.form-item label {
+    display: block;
+
+    margin-bottom: 10px;
+
+    font-size: 14px;
+
+    letter-spacing: 1px;
+}
+
+
+.form-item input,
+.form-item select,
+.form-item textarea {
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 15px;
+
+    border: 1px solid #b8b1a3;
+
+    background-color: #f4f0e7;
+
+    color: #222;
+
+    font-family:
+        "Hiragino Mincho ProN",
+        "Yu Mincho",
+        serif;
+
+    font-size: 14px;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+
+.form-item input:focus,
+.form-item select:focus,
+.form-item textarea:focus {
+
+    border-color: #555;
+
+    background-color: #fff;
+}
+
+
+.form-item textarea {
+
+    resize: vertical;
+
+    line-height: 1.8;
+}
+
+
+
+/* 送信ボタン */
+
+.form-submit {
+
+    margin-top: 50px;
+
+    text-align: center;
+}
+
+
+.form-submit button {
+
+    padding: 16px 55px;
+
+    border: 1px solid #333;
+
+    background-color: #222;
+
+    color: #e8e2d5;
+
+    font-family: Georgia, serif;
+
+    font-size: 12px;
+
+    letter-spacing: 3px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.form-submit button:hover {
+
+    background-color: #e8e2d5;
+
+    color: #222;
+
+}
+
+
+
+/* -------------------------
+   CONFIDENTIAL
+------------------------- */
+
+.contact-note {
+
+    padding: 130px 30px;
+
+    text-align: center;
+
+    background-color: #111;
+
+    border-top: 1px solid #4a463d;
+
+    border-bottom: 1px solid #4a463d;
+}
+
+
+.contact-note p {
+
+    font-family: Georgia, serif;
+
+    font-size: 11px;
+
+    letter-spacing: 5px;
+
+    color: #8d877a;
+
+    margin-bottom: 30px;
+}
+
+
+.contact-note h2 {
+
+    font-size: 36px;
+
+    font-weight: normal;
+
+    line-height: 1.8;
+
+    margin: 0 0 35px;
+}
+
+
+.contact-note span {
+
+    font-family: Georgia, serif;
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+    color: #777;
+}
+
+
+/* =========================
+   CASE FILES
+========================= */
+
+
+/* CASE FILES トップ */
+
+.casefile-hero {
+    padding: 120px 30px;
+
+    text-align: center;
+
+    background-color: #171717;
+
+    border-bottom: 1px solid #4a463d;
+}
+
+
+.casefile-hero h1 {
+    font-family: Georgia, serif;
+
+    font-size: 52px;
+
+    font-weight: normal;
+
+    letter-spacing: 6px;
+
+    margin: 20px 0 30px;
+}
+
+
+.casefile-hero p:last-child {
+    color: #aaa;
+
+    line-height: 2;
+
+    font-size: 15px;
+}
+
+
+
+/* -------------------------
+   事件記録
+------------------------- */
+
+.casefile-section {
+    padding: 120px 30px;
+
+    background-color: #e8e2d5;
+
+    color: #222;
+}
+
+
+.casefile-container {
     max-width: 1000px;
 
     margin: 0 auto;
 }
 
 
-/* 作品カード */
 
-.work-card {
-    width: 280px;
+/* 事件ファイル */
 
-    background-color: white;
+.case-record {
+    margin-bottom: 70px;
 
-    border-radius: 12px;
+    border: 1px solid #aaa;
+
+    background-color: #f4f0e7;
+}
+
+
+
+/* ファイル上部 */
+
+.case-record-header {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 18px 25px;
+
+    border-bottom: 1px solid #aaa;
+
+    background-color: #ebe6da;
+}
+
+
+.case-number {
+    font-family: Georgia, serif;
+
+    font-size: 13px;
+
+    letter-spacing: 3px;
+
+    color: #555;
+}
+
+
+.case-status {
+    font-family: Georgia, serif;
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+    color: #777;
+}
+
+
+
+/* ファイル内容 */
+
+.case-record-content {
+    display: flex;
+
+    gap: 50px;
+
+    padding: 40px;
+}
+
+
+
+/* 写真 */
+
+.case-image {
+    width: 360px;
+
+    flex-shrink: 0;
 
     overflow: hidden;
 
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-
-    transition: transform 0.3s;
+    background-color: #222;
 }
 
 
-/* カードの画像 */
-
-.work-card img {
+.case-image img {
     width: 100%;
 
-    height: 180px;
+    height: auto;
 
-    object-fit: cover;
+    display: block;
+
+    object-fit: contain;
+
+    filter: grayscale(30%);
 }
 
 
-/* カードのタイトル */
 
-.work-card h2 {
-    font-size: 22px;
+/* 事件情報 */
 
-    margin: 20px 20px 10px;
+.case-information {
+    flex: 1;
 }
 
 
-/* カードの説明 */
+.case-label {
+    font-family: Georgia, serif;
 
-.work-card p {
-    line-height: 1.7;
+    font-size: 10px;
 
-    color: #666;
+    letter-spacing: 3px;
 
-    margin: 0 20px 25px;
+    color: #777;
+
+    margin: 0 0 12px;
 }
 
 
-/* マウスを乗せたとき */
+.case-information h2 {
+    font-size: 30px;
 
-.work-card:hover {
-    transform: translateY(-8px);
+    font-weight: normal;
+
+    margin: 0 0 30px;
 }
+
+
+
+/* DATE / LOCATION */
+
+.case-meta {
+    display: flex;
+
+    gap: 50px;
+
+    margin-bottom: 30px;
+
+    padding-bottom: 25px;
+
+    border-bottom: 1px solid #ccc;
+}
+
+
+.case-meta div {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+
+.case-meta span {
+    font-family: Georgia, serif;
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+    color: #888;
+}
+
+
+.case-meta strong {
+    font-size: 13px;
+
+    font-weight: normal;
+}
+
+
+
+/* 事件概要 */
+
+.case-description {
+    font-size: 14px;
+
+    line-height: 2;
+
+    color: #555;
+
+    margin: 0;
+}
+
+
+
+/* -------------------------
+   CONFIDENTIAL
+------------------------- */
+
+.casefile-note {
+    padding: 130px 30px;
+
+    text-align: center;
+
+    background-color: #111;
+
+    border-top: 1px solid #4a463d;
+
+    border-bottom: 1px solid #4a463d;
+}
+
+
+.casefile-note p {
+    font-family: Georgia, serif;
+
+    font-size: 11px;
+
+    letter-spacing: 5px;
+
+    color: #8d877a;
+
+    margin-bottom: 30px;
+}
+
+
+.casefile-note h2 {
+    font-size: 36px;
+
+    font-weight: normal;
+
+    line-height: 1.8;
+
+    margin: 0 0 35px;
+}
+
+
+.casefile-note span {
+    font-family: Georgia, serif;
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+    color: #777;
+}
+
+/* =========================
+   スマートフォン対応
+========================= */
+
+@media (max-width: 768px) {
+
+
+    /* -------------------------
+       ヘッダー
+    ------------------------- */
+
+    header {
+        padding: 20px;
+        
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+
+    .logo {
+        text-align: center;
+    }
+
+
+    .logo strong {
+        font-size: 18px;
+    }
+
+
+    nav {
+        gap: 20px;
+
+        justify-content: center;
+
+        flex-wrap: wrap;
+    }
+
+
+    nav a {
+        font-size: 11px;
+
+        letter-spacing: 1px;
+    }
+
+
+
+    /* -------------------------
+       HERO
+    ------------------------- */
+
+    .hero {
+        min-height: 600px;
+
+        padding: 30px 20px;
+
+        box-sizing: border-box;
+    }
+
+
+    .hero-content {
+        padding: 20px;
+    }
+
+
+    .hero-subtitle {
+        font-size: 10px;
+
+        letter-spacing: 3px;
+    }
+
+
+    .hero h1 {
+        font-size: 42px;
+
+        line-height: 1.5;
+    }
+
+
+    .hero-text {
+        font-size: 14px;
+
+        line-height: 1.9;
+    }
+
+
+    .main-button {
+        padding: 14px 35px;
+
+        font-size: 11px;
+    }
+
+
+
+    /* -------------------------
+       CASE FILES
+    ------------------------- */
+
+    .case-section {
+        padding: 80px 20px;
+    }
+
+
+    .case-section h2 {
+        font-size: 32px;
+
+        letter-spacing: 3px;
+    }
+
+
+    .section-description {
+        font-size: 14px;
+
+        line-height: 1.8;
+
+        margin-bottom: 40px;
+    }
+
+
+    /* カードを縦並びにする */
+
+    .case-container {
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 20px;
+    }
+
+
+    .case-card {
+        width: 100%;
+
+        max-width: 400px;
+    }
+
+
+
+    /* -------------------------
+       MESSAGE
+    ------------------------- */
+
+    .message {
+        padding: 100px 20px;
+    }
+
+
+    .message p {
+        font-size: 9px;
+
+        letter-spacing: 3px;
+    }
+
+
+    .message h2 {
+        font-size: 28px;
+
+        line-height: 1.8;
+    }
+
+
+
+    /* -------------------------
+       FOOTER
+    ------------------------- */
+
+    footer {
+        padding: 40px 20px;
+    }
+
+
+    footer p {
+        font-size: 10px;
+    }
+
+        /* ABOUT */
+
+        .about-hero {
+            padding: 90px 20px;
+        }
+    
+    
+        .about-hero h1 {
+            font-size: 34px;
+    
+            letter-spacing: 2px;
+        }
+    
+    
+        .about-message {
+            padding: 80px 25px;
+        }
+    
+    
+        .about-text h2 {
+            font-size: 30px;
+        }
+    
+    
+        .service-container {
+            flex-direction: column;
+        }
+    
+    
+        .service-card {
+            width: 100%;
+    
+            box-sizing: border-box;
+        }
+    
+    
+        .office-info {
+            padding: 80px 20px;
+        }
+    
+    
+        .office-info h2 {
+            font-size: 32px;
+        }
+    
+    
+        .office-row {
+            flex-direction: column;
+    
+            gap: 8px;
+        }
+
+            /* 代表挨拶 */
+
+    .representative-container {
+        flex-direction: column;
+
+        gap: 45px;
+
+        text-align: center;
+    }
+
+
+    .representative-photo {
+        width: 220px;
+
+        height: 220px;
+    }
+
+
+    .representative-text {
+        max-width: 100%;
+    }
+
+
+    .representative-text h2 {
+        font-size: 30px;
+    }
+
+
+    .representative-text p:not(.about-label):not(.representative-name):not(.representative-position) {
+        text-align: left;
+    }
+
+        /* CONTACT */
+
+        .contact-hero {
+            padding: 90px 20px;
+        }
+    
+    
+        .contact-hero h1 {
+            font-size: 34px;
+    
+            letter-spacing: 2px;
+        }
+    
+    
+        .contact-form-section {
+            padding: 80px 25px;
+        }
+    
+    
+        .contact-form-container h2 {
+            font-size: 30px;
+        }
+    
+    
+        .contact-description {
+            line-height: 1.8;
+    
+            margin-bottom: 45px;
+        }
+    
+    
+        .form-item {
+            margin-bottom: 28px;
+        }
+    
+    
+        .form-item input,
+        .form-item select,
+        .form-item textarea {
+            padding: 13px;
+    
+            font-size: 14px;
+        }
+    
+    
+        .form-submit button {
+            width: 100%;
+    
+            padding: 15px;
+        }
+    
+    
+        .contact-note {
+            padding: 100px 20px;
+        }
+    
+    
+        .contact-note h2 {
+            font-size: 28px;
+        }
+
+        /* CASE FILES */
+
+        .casefile-hero {
+            padding: 90px 20px;
+        }
+    
+    
+        .casefile-hero h1 {
+            font-size: 38px;
+    
+            letter-spacing: 4px;
+        }
+    
+    
+        .casefile-section {
+            padding: 80px 20px;
+        }
+    
+    
+        .case-record {
+            margin-bottom: 40px;
+        }
+    
+    
+        .case-record-header {
+            padding: 15px 18px;
+        }
+    
+    
+        .case-record-content {
+            flex-direction: column;
+    
+            gap: 30px;
+    
+            padding: 25px;
+        }
+    
+    
+        .case-image {
+            width: 100%;
+    
+            height: auto;
+        }
+    
+    
+        .case-information h2 {
+            font-size: 26px;
+    
+            margin-bottom: 25px;
+        }
+    
+    
+        .case-meta {
+            gap: 30px;
+    
+            flex-wrap: wrap;
+        }
+    
+    
+        .case-description {
+            font-size: 14px;
+    
+            line-height: 1.9;
+        }
+    
+    
+        .casefile-note {
+            padding: 100px 20px;
+        }
+    
+    
+        .casefile-note h2 {
+            font-size: 28px;
+        }
+
+
+
+}
+
+

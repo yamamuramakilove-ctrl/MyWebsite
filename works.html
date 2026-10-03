@@ -2,115 +2,400 @@
 <html lang="ja">
 
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>WORKS | MY WEBSITE</title>
+    <title>CASE FILES | 坂山探偵事務所</title>
 
     <link rel="stylesheet" href="style.css">
+
 </head>
+
 
 <body>
 
+
     <!-- ヘッダー -->
+
     <header>
 
-        <h2>MY WEBSITE</h2>
+        <div class="logo">
+
+            <span>
+                PRIVATE DETECTIVE
+            </span>
+
+            <strong>
+                坂山探偵事務所
+            </strong>
+
+        </div>
+
 
         <nav>
-            <a href="index.html">HOME</a>
-            <a href="about.html">ABOUT</a>
-            <a href="works.html">WORKS</a>
+
+            <a href="index.html">
+                HOME
+            </a>
+
+            <a href="about.html">
+                ABOUT
+            </a>
+
+            <a href="works.html">
+                CASE FILES
+            </a>
+
+            <a href="contact.html">
+                CONTACT
+            </a>
+
         </nav>
 
     </header>
 
 
+
     <!-- メイン -->
+
     <main>
 
-        <section id="works">
 
-            <h1>WORKS</h1>
-            <h2>事件ファイル</h2>
+        <!-- CASE FILES INTRO -->
 
-            <p class="works-description">
-                これまでに解決した事件はこちら。
+        <section class="casefile-hero">
+
+            <p class="section-label">
+                INVESTIGATION RECORDS
             </p>
 
+            <h1>
+                CASE FILES
+            </h1>
 
-            <!-- 作品一覧 -->
-            <div class="works-container">
+            <p>
+                これまでに扱った事件の調査記録。<br>
+                一部の記録を公開しています。
+            </p>
 
-
-                <!-- 作品1 -->
-                <div class="work-card">
-
-                    <img
-                        src="images/work1.jpg"
-                        alt="作品1"
-                    >
-
-                    <h3>A氏飲み会殺人事件</h3>
-
-                    <p>
-                        万えまきサークルにて開催された追い出しコンパ。<br>
-                        その最中に1人の男が殺された。<br>
-                        事件と事故の両面から、真実を追いました。
-                    </p>
-
-                </div>
+        </section>
 
 
-                <!-- 作品2 -->
-                <div class="work-card">
 
-                    <img
-                        src="images/profile.jpg"
-                        alt="作品2"
-                    >
+        <!-- CASE FILES -->
 
-                    <h2>作品タイトル</h2>
-
-                    <p>
-                        ここに作品についての説明を書きます。
-                        使用した技術などを書くこともできます。
-                    </p>
-
-                </div>
+        <section class="casefile-section">
 
 
-                <!-- 作品3 -->
-                <div class="work-card">
+            <div class="casefile-container">
 
-                    <img
-                        src="images/profile.jpg"
-                        alt="作品3"
-                    >
 
-                    <h2>作品タイトル</h2>
+                <!-- CASE 001 -->
 
-                    <p>
-                        ここに作品についての説明を書きます。
-                        自分の作品や研究を紹介できます。
-                    </p>
+                <article class="case-record">
 
-                </div>
+                    <div class="case-record-header">
+
+                        <span class="case-number">
+                            CASE 001
+                        </span>
+
+                        <span class="case-status">
+                            CLOSED
+                        </span>
+
+                    </div>
+
+
+                    <div class="case-record-content">
+
+                        <div class="case-image">
+
+                            <img
+                                src="images/work1.jpg"
+                                alt="A氏飲み会殺人事件"
+                            >
+
+                        </div>
+
+
+                        <div class="case-information">
+
+                            <p class="case-label">
+                                CASE TITLE
+                            </p>
+
+                            <h2>
+                                A氏飲み会殺人事件
+                            </h2>
+
+
+                            <div class="case-meta">
+
+                                <div>
+                                    <span>
+                                        DATE
+                                    </span>
+
+                                    <strong>
+                                        2025.03.19
+                                    </strong>
+                                </div>
+
+
+                                <div>
+                                    <span>
+                                        LOCATION
+                                    </span>
+
+                                    <strong>
+                                        大阪市内
+                                    </strong>
+                                </div>
+
+                            </div>
+
+
+                            <p class="case-label">
+                                CASE SUMMARY
+                            </p>
+
+                            <p class="case-description">
+                                万えまきサークルにて開催された追い出しコンパ。<br>
+                                その最中、参加者の一人が死亡する事件が発生した。
+                                当初は事故の可能性も考えられていたが、
+                                現場に残された複数の証拠から事件と事故の両面で調査を実施。
+                                我々の地道な調査の結果、真犯人を特定。<br>
+                                無事に事件を解決に導くことができた。
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- CASE 002 -->
+
+                <article class="case-record">
+
+                    <div class="case-record-header">
+
+                        <span class="case-number">
+                            CASE 002
+                        </span>
+
+                        <span class="case-status">
+                            INVESTIGATING
+                        </span>
+
+                    </div>
+
+
+                    <div class="case-record-content">
+
+                        <div class="case-image">
+
+                            <img
+                                src="images/profile.jpg"
+                                alt="失踪人物調査"
+                            >
+
+                        </div>
+
+
+                        <div class="case-information">
+
+                            <p class="case-label">
+                                CASE TITLE
+                            </p>
+
+                            <h2>
+                                失踪した人物
+                            </h2>
+
+
+                            <div class="case-meta">
+
+                                <div>
+                                    <span>
+                                        DATE
+                                    </span>
+
+                                    <strong>
+                                        2026.05.02
+                                    </strong>
+                                </div>
+
+
+                                <div>
+                                    <span>
+                                        LOCATION
+                                    </span>
+
+                                    <strong>
+                                        大阪府内
+                                    </strong>
+                                </div>
+
+                            </div>
+
+
+                            <p class="case-label">
+                                CASE SUMMARY
+                            </p>
+
+                            <p class="case-description">
+                                突然姿を消した人物について、
+                                依頼人から捜索の依頼を受けた。
+                                最後に確認された場所を起点として、
+                                関係者への聞き込みと行動記録の調査を進めている。
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- CASE 003 -->
+
+                <article class="case-record">
+
+                    <div class="case-record-header">
+
+                        <span class="case-number">
+                            CASE 003
+                        </span>
+
+                        <span class="case-status">
+                            CONFIDENTIAL
+                        </span>
+
+                    </div>
+
+
+                    <div class="case-record-content">
+
+                        <div class="case-image">
+
+                            <img
+                                src="images/profile.jpg"
+                                alt="深夜の電話"
+                            >
+
+                        </div>
+
+
+                        <div class="case-information">
+
+                            <p class="case-label">
+                                CASE TITLE
+                            </p>
+
+                            <h2>
+                                深夜の電話
+                            </h2>
+
+
+                            <div class="case-meta">
+
+                                <div>
+                                    <span>
+                                        DATE
+                                    </span>
+
+                                    <strong>
+                                        2026.06.11
+                                    </strong>
+                                </div>
+
+
+                                <div>
+                                    <span>
+                                        LOCATION
+                                    </span>
+
+                                    <strong>
+                                        非公開
+                                    </strong>
+                                </div>
+
+                            </div>
+
+
+                            <p class="case-label">
+                                CASE SUMMARY
+                            </p>
+
+                            <p class="case-description">
+                                毎晩、午前0時を過ぎた頃にかかってくる
+                                謎の電話について調査を開始。
+                                発信元を特定することはできず、
+                                現在も調査を継続している。
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </article>
 
 
             </div>
 
         </section>
 
+
+
+        <!-- CONFIDENTIAL -->
+
+        <section class="casefile-note">
+
+            <p>
+                PRIVATE & CONFIDENTIAL
+            </p>
+
+            <h2>
+                すべての記録が、<br>
+                公開されているとは限りません。
+            </h2>
+
+            <span>
+                SOME CASE FILES REMAIN CLASSIFIED.
+            </span>
+
+        </section>
+
+
     </main>
 
 
+
     <!-- フッター -->
+
     <footer>
 
-        <p>© 2026 My Website</p>
+        <p>
+            坂山探偵事務所
+        </p>
+
+        <p>
+            PRIVATE & CONFIDENTIAL
+        </p>
+
+        <p>
+            © 2026 SAKAYAMA DETECTIVE OFFICE
+        </p>
 
     </footer>
+
 
 </body>
 
