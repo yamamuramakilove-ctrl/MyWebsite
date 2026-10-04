@@ -87,10 +87,50 @@ nav a {
 }
 
 
+nav a  {
+    color: #d8d0c0;
+
+    text-decoration: none;
+
+    font-family: Georgia, serif;
+
+    font-size: 13px;
+
+    letter-spacing: 2px;
+
+    position: relative;
+
+    transition: color 0.3s ease;
+}
+
+
+nav a::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    bottom: -6px;
+
+    width: 0;
+
+    height: 1px;
+
+    background-color: #d8d0c0;
+
+    transition: width 0.3s ease;
+}
+
+
 nav a:hover {
     color: #fff;
+}
 
-    opacity: 0.6;
+
+nav a:hover::after {
+    width: 100%;
 }
 
 
@@ -182,7 +222,9 @@ nav a:hover {
 
     letter-spacing: 3px;
 
-    transition: 0.3s;
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
 }
 
 
@@ -1307,7 +1349,32 @@ footer p {
         letter-spacing: 1px;
     }
 
+        /* OPENING */
 
+        .opening-content {
+            width: 90%;
+        }
+    
+    
+        .opening-content h1 {
+            font-size: 30px;
+    
+            letter-spacing: 3px;
+        }
+    
+    
+        .opening-content p {
+            font-size: 10px;
+    
+            letter-spacing: 4px;
+        }
+    
+    
+        .opening-content span {
+            font-size: 8px;
+    
+            letter-spacing: 2px;
+        }
 
     /* -------------------------
        HERO
@@ -1660,5 +1727,235 @@ footer p {
 
 
 }
+/* =========================
+   Ver.4 ANIMATION
+========================= */
 
 
+/* -------------------------
+   ページ表示
+------------------------- */
+
+body {
+    animation: pageFadeIn 1.2s ease;
+}
+
+
+@keyframes pageFadeIn {
+
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
+
+/* -------------------------
+   HERO アニメーション
+------------------------- */
+
+.hero-subtitle {
+    animation: fadeUp 1s ease 0.3s both;
+}
+
+
+.hero h1 {
+    animation: fadeUp 1s ease 0.6s both;
+}
+
+
+.hero-text {
+    animation: fadeUp 1s ease 0.9s both;
+}
+
+
+.main-button {
+    animation: fadeUp 1s ease 1.2s both;
+}
+
+
+@keyframes fadeUp {
+
+    from {
+        opacity: 0;
+
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform: translateY(0);
+    }
+
+}
+
+/* -------------------------
+   CASE FILES スクロール表示
+------------------------- */
+
+.case-record {
+
+    opacity: 0;
+
+    transform:
+        translateY(30px)
+        scale(0.98);
+
+    transition:
+        opacity 1.5s ease,
+        transform 1.5s ease;
+}
+
+
+/* 画面内に入ったCASE FILE */
+
+.case-record.is-visible {
+
+    opacity: 1;
+
+    transform:
+        translateY(0)
+        scale(1);
+}
+
+
+
+
+/* =========================
+   HOME OPENING
+========================= */
+
+.opening-screen {
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 9999;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background-color: #111;
+
+    color: #e8e2d5;
+
+    animation: openingFadeOut 1.5s ease 2.3s forwards;
+
+    pointer-events: none;
+}
+
+
+.opening-content {
+
+    text-align: center;
+
+    animation: openingContent 1.5s ease forwards;
+}
+
+
+.opening-content p {
+
+    font-family: Georgia, serif;
+
+    font-size: 12px;
+
+    letter-spacing: 6px;
+
+    color: #999;
+
+    margin: 0 0 25px;
+}
+
+
+.opening-content h1 {
+
+    font-size: 42px;
+
+    font-weight: normal;
+
+    letter-spacing: 5px;
+
+    margin: 0 0 30px;
+}
+
+
+.opening-content span {
+
+    font-family: Georgia, serif;
+
+    font-size: 10px;
+
+    letter-spacing: 4px;
+
+    color: #777;
+}
+
+
+/* 画面全体が消える */
+
+@keyframes openingFadeOut {
+
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+
+        visibility: hidden;
+    }
+
+}
+
+
+/* 中央の文字 */
+
+@keyframes openingContent {
+
+    0% {
+
+        opacity: 0;
+
+        transform: translateY(15px);
+
+    }
+
+    100% {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+.case-record {
+
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+
+@media (hover: hover) and (pointer: fine) {
+
+    .case-record:hover {
+
+        transform:
+            translateY(-5px);
+
+        box-shadow:
+            0 15px 35px rgba(0, 0, 0, 0.12);
+
+    }
+
+}
